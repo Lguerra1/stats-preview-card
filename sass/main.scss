@@ -1,0 +1,78 @@
+@import "./fonts.scss";
+
+// ## Colors
+
+:root {
+  // ### Primary
+  --dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  // ### Neutral
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  height: 33rem;
+  width: 85rem;
+  border-radius: .5rem;
+  display: flex;
+  overflow: hidden;
+
+  &__left {
+    background-color: var(--dark-desaturated-blue);
+    height: 100%;
+    width: 55%;
+    padding-left: 4rem;
+    padding-top: 5rem;
+
+    .text-container {
+      color: var(--white);
+      max-width: 30rem;
+      .main-text {
+        font-family: "lexend deca";
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+      }
+      .purple-text {
+        color: var(--soft-violet);
+      }
+      .content-text {
+        font-family: "lexend deca";
+        color: var(--slightly-transparent-white-2);
+      }
+    }
+  }
+
+  &__right {
+    background-color: var(--soft-violet);
+    height: 100%;
+    width: 45%;
+  }
+}
