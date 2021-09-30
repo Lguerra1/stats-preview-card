@@ -31,6 +31,7 @@ html {
 
 body {
   min-height: 100vh;
+  width: 100%;
   background-color: var(--dark-blue);
   display: flex;
   align-items: center;
@@ -38,15 +39,14 @@ body {
 }
 
 .main-content {
-  height: 33rem;
+  height: 31rem;
   width: 85rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: flex;
   overflow: hidden;
 
   &__left {
     background-color: var(--dark-desaturated-blue);
-    height: 100%;
     width: 55%;
     padding-left: 4rem;
     padding-top: 5rem;
@@ -64,15 +64,78 @@ body {
         color: var(--soft-violet);
       }
       .content-text {
-        font-family: "lexend deca";
+        max-width: 26rem;
+        font-family: "inter";
         color: var(--slightly-transparent-white-2);
+        line-height: 1.8rem;
+        font-size: 1.1rem;
+        margin-bottom: 5rem;
+      }
+      .stat-heading-container {
+        display: flex;
+        justify-content: space-between;
+        .stat-num {
+          color: var(--white);
+          font-family: "inter";
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+        }
+        .stat-text {
+          color: var(--slightly-transparent-white-2);
+          font-family: "lexend deca";
+        }
       }
     }
   }
 
   &__right {
     background-color: var(--soft-violet);
-    height: 100%;
-    width: 45%;
+    height: 31rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .background-image {
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main-content {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 29rem;
+    min-width: 29rem;
+
+    &__left {
+      width: 100%;
+      padding: 2rem 1rem;
+
+      .text-container {
+        text-align: center;
+        .content-text {
+          max-width: auto;
+          padding: 0 3.5rem;
+          margin-bottom: 3rem;
+        }
+        .stat-heading-container {
+          flex-direction: column;
+          .stat-heading {
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
+
+    &__right {
+      height: 24rem;
+      .background-image {
+        height: 100%;
+      }
+    }
   }
 }
