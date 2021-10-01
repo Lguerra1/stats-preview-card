@@ -236,8 +236,8 @@ body {
     flex-direction: column;
     flex-direction: column-reverse;
     height: auto;
-    width: 29rem;
-    min-width: 29rem; }
+    width: 31rem;
+    min-width: 31rem; }
     .main-content__left {
       width: 100%;
       padding: 2rem 1rem; }
