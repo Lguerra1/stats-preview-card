@@ -69,7 +69,7 @@ body {
         color: var(--slightly-transparent-white-2);
         line-height: 1.8rem;
         font-size: 1.1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
       }
       .stat-heading-container {
         display: flex;
@@ -85,6 +85,7 @@ body {
           color: var(--slightly-transparent-white-2);
           font-family: "lexend deca";
           text-transform: uppercase;
+          letter-spacing: 1px;
         }
       }
     }

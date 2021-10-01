@@ -207,7 +207,7 @@ body {
         color: var(--slightly-transparent-white-2);
         line-height: 1.8rem;
         font-size: 1.1rem;
-        margin-bottom: 5rem; }
+        margin-bottom: 4rem; }
       .main-content__left .text-container .stat-heading-container {
         display: flex;
         justify-content: space-between; }
@@ -220,7 +220,8 @@ body {
         .main-content__left .text-container .stat-heading-container .stat-text {
           color: var(--slightly-transparent-white-2);
           font-family: "lexend deca";
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          letter-spacing: 1px; }
   .main-content__right {
     background-color: var(--soft-violet);
     height: 31rem;
